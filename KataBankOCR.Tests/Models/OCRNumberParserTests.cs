@@ -64,7 +64,10 @@ namespace KataBankOCR.Models.Tests
         [TestMethod()]
         public void parseTest_Five()
         {
-            string[] test = new string[] { " _ ", "|_ ", " _|", "   " };
+            string[] test = new string[] { " _ ",
+                                           "|_ ",
+                                           " _|",
+                                           "   " };
 
             string result = OCRNumberParser.parse(test);
 

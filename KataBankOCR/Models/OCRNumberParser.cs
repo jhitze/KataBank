@@ -57,46 +57,51 @@ namespace KataBankOCR.Models
                                                       "   " };
 
 
+        /// <summary>
+        /// Simplify array of strings to a single string. 
+        /// </summary>
+        /// <param name="suspectedNumber"></param>
+        /// <returns></returns>
+        /// http://stackoverflow.com/a/3232758
         public static string parse(string[] suspectedNumber)
         {
-            // a1.OrderBy(a => a).SequenceEqual(a2.OrderBy(a => a));
-            if (suspectedNumber.OrderBy(a =>a).SequenceEqual(zero.OrderBy(a => a)))
+            if (suspectedNumber.SequenceEqual(zero))
             {
                 return "0";
             }
-            else if (suspectedNumber.OrderBy(a => a).SequenceEqual(one.OrderBy(a => a)))
+            else if (suspectedNumber.SequenceEqual(one))
             {
                 return "1";
             }
-            else if (suspectedNumber.OrderBy(a => a).SequenceEqual(two.OrderBy(a => a)))
+            else if (suspectedNumber.SequenceEqual(two))
             {
                 return "2";
             }
-            else if (suspectedNumber.OrderBy(a => a).SequenceEqual(three.OrderBy(a => a)))
+            else if (suspectedNumber.SequenceEqual(three))
             {
                 return "3";
             }
-            else if (suspectedNumber.OrderBy(a => a).SequenceEqual(four.OrderBy(a => a)))
+            else if (suspectedNumber.SequenceEqual(four))
             {
                 return "4";
             }
-            else if (suspectedNumber.OrderBy(a => a).SequenceEqual(five.OrderBy(a => a)))
+            else if (suspectedNumber.SequenceEqual(five))
             {
                 return "5";
             }
-            else if (suspectedNumber.OrderBy(a => a).SequenceEqual(six.OrderBy(a => a)))
+            else if (suspectedNumber.SequenceEqual(six))
             {
                 return "6";
             }
-            else if (suspectedNumber.OrderBy(a => a).SequenceEqual(seven.OrderBy(a => a)))
+            else if (suspectedNumber.SequenceEqual(seven))
             {
                 return "7";
             }
-            else if (suspectedNumber.OrderBy(a => a).SequenceEqual(eight.OrderBy(a => a)))
+            else if (suspectedNumber.SequenceEqual(eight))
             {
                 return "8";
             }
-            else if (suspectedNumber.OrderBy(a => a).SequenceEqual(nine.OrderBy(a => a)))
+            else if (suspectedNumber.SequenceEqual(nine))
             {
                 return "9";
             }

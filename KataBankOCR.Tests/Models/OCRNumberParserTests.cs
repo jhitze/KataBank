@@ -20,5 +20,15 @@ namespace KataBankOCR.Models.Tests
 
             Assert.AreEqual("0", result);
         }
+
+        [TestMethod()]
+        public void parseTest_One()
+        {
+            string[] test = new string[] { "   ", "  |", "  |", "   " };
+
+            string result = OCRNumberParser.parse(test);
+
+            Assert.AreEqual("1", result);
+        }
     }
 }

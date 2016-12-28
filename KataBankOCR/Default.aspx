@@ -5,7 +5,7 @@
     <div class="jumbotron">
         <h1>KataBankOCR</h1>
         <p class="lead">A neat place to transcribe your OCR documents.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <asp:FileUpload ID="ocrFileUpload" runat="server" />
     </div>
-
+    
 </asp:Content>

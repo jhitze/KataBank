@@ -16,8 +16,16 @@ namespace KataBankOCR.Models
         public List<string> Parse()
         {
             List<string> accountNumbers = new List<string>();
+
+            List<string> fileLines = new List<string>();
             // Read through stream
-            // find line breaks
+            StreamReader reader = new StreamReader(FileContents);
+            while (!reader.EndOfStream)
+            {
+                // find line breaks
+                fileLines.Add(reader.ReadLine());
+            }
+
             // build groupings of account numbers
             // use OCRAccountNumberParser class to parse groupings
             // return List<string>AccountNumbers

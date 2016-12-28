@@ -22,7 +22,7 @@ namespace KataBankOCR
                 try
                 {
                     string filename = Path.GetFileName(ocrFileUpload.FileName);
-                    var ocrFile = ocrFileUpload.FileContent;
+                    var ocrFile = ocrFileUpload.FileBytes;
                     // Open file parser
                     // Display results back to user?
                     uploadStatus.Text = "Upload status: File uploaded!";

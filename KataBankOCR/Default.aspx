@@ -10,6 +10,7 @@
         <asp:Button class="btn btn-primary" runat="server" id="UploadButton" text="Upload" onclick="UploadButton_Click"/>
     </div>
     <div class="row">
-        
+        <p>Here are the account numbers recognized from the file:</p>
+        <asp:Label runat="server" ID="AccountNumbers"></asp:Label>
     </div>
 </asp:Content>

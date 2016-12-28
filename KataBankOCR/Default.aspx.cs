@@ -24,7 +24,9 @@ namespace KataBankOCR
                 {
                     string filename = Path.GetFileName(ocrFileUpload.FileName);
                     var ocrFile = ocrFileUpload.FileContent;
-                    
+                    var ocrFileReader = new OCRFile(ocrFile);
+                    var results = ocrFileReader.Parse();
+                    AccountNumbers.Text = string.Join("<br/>", results.ToArray());
                     // Display results back to user?
                     uploadStatus.Text = "Upload status: File uploaded!";
                 }

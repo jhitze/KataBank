@@ -10,7 +10,8 @@ namespace KataBankOCR.Models
         public string ParseLines(List<string> accountNumberLines)
         {
             string accountNumber = string.Empty;
-
+            // Split into sections of 3 chars
+            // send to Number reader
             return accountNumber;
         }
     }

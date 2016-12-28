@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -16,7 +17,21 @@ namespace KataBankOCR
 
         protected void UploadButton_Click(object sender, EventArgs e)
         {
-
+            if (ocrFileUpload.HasFile)
+            {
+                try
+                {
+                    string filename = Path.GetFileName(ocrFileUpload.FileName);
+                    var ocrFile = ocrFileUpload.FileContent;
+                    // Open file parser
+                    // Display results back to user?
+                    uploadStatus.Text = "Upload status: File uploaded!";
+                }
+                catch (Exception ex)
+                {
+                    uploadStatus.Text = "Upload status: The file could not be uploaded. The following error occured: " + ex.Message;
+                }
+            }
         }
     }
 }

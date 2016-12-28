@@ -5,6 +5,7 @@
     <div class="jumbotron">
         <h1>KataBankOCR</h1>
         <p class="lead">A neat place to transcribe your OCR documents.</p>
+        <asp:Label runat="server" ID="uploadStatus" class="label label-info"></asp:Label>
         <asp:FileUpload ID="ocrFileUpload" runat="server" />
         <asp:Button class="btn btn-primary" runat="server" id="UploadButton" text="Upload" onclick="UploadButton_Click"/>
     </div>

@@ -13,5 +13,10 @@ namespace KataBankOCR
         {
 
         }
+
+        protected void UploadButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KataBankOCR.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,8 +23,8 @@ namespace KataBankOCR
                 try
                 {
                     string filename = Path.GetFileName(ocrFileUpload.FileName);
-                    var ocrFile = ocrFileUpload.FileBytes;
-                    // Open file parser
+                    var ocrFile = ocrFileUpload.FileContent;
+                    
                     // Display results back to user?
                     uploadStatus.Text = "Upload status: File uploaded!";
                 }

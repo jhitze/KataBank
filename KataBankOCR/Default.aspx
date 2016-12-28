@@ -9,5 +9,7 @@
         <asp:FileUpload ID="ocrFileUpload" runat="server" />
         <asp:Button class="btn btn-primary" runat="server" id="UploadButton" text="Upload" onclick="UploadButton_Click"/>
     </div>
-    
+    <div class="row">
+        
+    </div>
 </asp:Content>
